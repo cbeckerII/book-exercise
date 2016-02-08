@@ -35,10 +35,23 @@ class Book
     {
         return bookLength;
     }
-    public void printAuthor()
+    public void printAutor()
+    {
+        System.out.println(author);
+    }
+    public void printTitle()
+    {
+        System.out.println(title);
+    }
+    public void printPages()
+    {
+        System.out.println(bookLength);
+    }
+    public void printDetails()
     {
         System.out.println("Book : " + title);
         System.out.println("Author : " + author);
+        System.out.println(bookLength + " pages in length.");
     }
 
     // Add the methods here ...
