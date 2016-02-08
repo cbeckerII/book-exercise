@@ -29,6 +29,11 @@ class Book
     {
         return author;
     }
+    public void printAuthor()
+    {
+        System.out.println("Book : " + title);
+        System.out.println("Author : " + author);
+    }
 
     // Add the methods here ...
 }
