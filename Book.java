@@ -11,17 +11,23 @@ class Book
     // The fields.
     private String author;
     private String title;
-    private int bookLength;
+    private int length;
+    private double rating;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages, double bookRating)
     {
         author = bookAuthor;
         title = bookTitle;
-        bookLength = bookPages;
+        length = bookPages;
+        rating = bookRating;
+    }
+    public double getRating()
+    {
+        return rating;
     }
     public String getTitle()
     {
@@ -33,7 +39,7 @@ class Book
     }
     public int getPages()
     {
-        return bookLength;
+        return length;
     }
     public void printAutor()
     {
@@ -45,13 +51,14 @@ class Book
     }
     public void printPages()
     {
-        System.out.println(bookLength);
+        System.out.println(length);
     }
+    //86
     public void printDetails()
     {
         System.out.println("Book : " + title);
         System.out.println("Author : " + author);
-        System.out.println(bookLength + " pages in length.");
+        System.out.println(length + " pages in length.");
     }
 
     // Add the methods here ...
