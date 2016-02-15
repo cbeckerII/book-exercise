@@ -18,7 +18,7 @@ class Book
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages, double bookRating)
+    public Book(String bookAuthor, String bookTitle, int bookPages, String reference)
     {
         author = bookAuthor;
         title = bookTitle;
@@ -59,7 +59,15 @@ class Book
         System.out.println("Book : " + title);
         System.out.println("Author : " + author);
         System.out.println(length + " pages in length.");
+        if (refNumber.length()<0){
+            System.out.println("ERROR INVALID REF#");
+        }
+        else if (refNumber.length()>3){
+            System.out.println("ERROR INVALID REF#");
     }
-
+    else {
+    System.out.println("Reference #: " + refNumber);
+}
     // Add the methods here ...
+}
 }
