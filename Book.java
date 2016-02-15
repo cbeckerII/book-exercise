@@ -12,7 +12,7 @@ class Book
     private String author;
     private String title;
     private int length;
-    private double rating;
+    private String refNumber;
 
     /**
      * Set the author and title fields when this object
@@ -23,11 +23,11 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         length = bookPages;
-        rating = bookRating;
+        refNumber = reference;
     }
-    public double getRating()
+    public String getReference()
     {
-        return rating;
+        return refNumber;
     }
     public String getTitle()
     {
